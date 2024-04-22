@@ -4,7 +4,7 @@ const links = [
   {
     name: "Mail",
     description: "Want to talk? Write me a mail",
-    url: "mailto:iam2kabhishek@gmail.com",
+    url: "mailto:iamtheweak1@gmail.com",
     icon: "fa fa-envelope",
     color: "#0088cc",
   },
