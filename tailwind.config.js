@@ -4,6 +4,12 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      padding: {
+        "5p": "5%",
+      },
+      boxShadow: {
+        custom: " 0 0px 6px #1688f0, 0 0px 6px #1688f0",
+      },
       fontFamily: {
         sans: ["Open Sans", "sans-serif"],
       },
@@ -17,6 +23,14 @@ export default {
           main: {
             DEFAULT: "#fff", // Light mode background
             dark: "#000", // Dark mode background
+          },
+          repo: {
+            DEFAULT: "#f0f0f0",
+            dark: "#0f0f1a",
+          },
+          user: {
+            DEFAULT: "#f5f5f5",
+            dark: "#0a0a0f",
           },
         },
         link: {

@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import links from "./links";
-import LinkList from "../linkList/linkList";
-import SearchInput from "../SearchInput/searchInput";
+import LinkList from "./linkList/linkList";
+import SearchInput from "../../SearchInput/searchInput";
 import { useState } from "react";
 
 const DisplayLinks = () => {
@@ -23,15 +23,12 @@ const DisplayLinks = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full max-w-7xl">
-      <Helmet>
-        <title>Theweak1&apos;s Links</title>
-      </Helmet>
       <h1 className="mb-1 text-accent text-4xl"> Find Me </h1>
       <small className="block w-full text-center mb-5">
         Everywhere on the internet!
       </small>
       <section className="flex flex-wrap justify-center items-center p-8 rounded-b-3xl mb-16">
-        <SearchInput onSearch={handleSearch} />
+        <SearchInput onSearch={handleSearch} placeHolder={"Search Links"} />
         <ul className="list-none p-0 w-full flex flex-wrap justify-center items-start">
           {filteredLinks.map((link) => (
             <LinkList key={link.name} link={link} />
