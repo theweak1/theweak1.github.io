@@ -5,7 +5,7 @@ const devicons = {
   Github: <i className="devicon-github-plain" style={{ color: "#1688f0" }}></i>,
   Chrome: <i className="devicon-chrome-plain" style={{ color: "#1688f0" }}></i>,
   Assembly: <i className="devicon-assembly-plain colored"></i>,
-  CSharp: <i className="devicon-csharp-plain colored"></i>, // Renamed for valid JS object key
+  "C#": <i className="devicon-csharp-plain colored"></i>, // Renamed for valid JS object key
   CPlusPlus: <i className="devicon-cplusplus-plain colored"></i>, // Renamed for valid JS object key
   C: <i className="devicon-c-plain colored"></i>,
   Clojure: <i className="devicon-clojure-plain colored"></i>,
@@ -51,6 +51,12 @@ const devicons = {
   Perl: <i className="devicon-perl-plain colored"></i>,
   PHP: <i className="devicon-php-plain colored"></i>,
   PLSQL: <i className="devicon-plsql-plain colored"></i>,
+  PowerShell: (
+    <i
+      className="devicon-powershell-plain colored"
+      style={{ color: "#0096D8" }}
+    ></i>
+  ),
   Processing: (
     <i
       className="devicon-processing-plain colored"
