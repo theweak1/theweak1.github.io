@@ -12,29 +12,31 @@ const RepoList = ({ userHome, repo, hideForks }) => {
   return (
     <li className="w-full min-h-44 rounded-xl my-4 mx-0 border border-accent p-4 text-center bg-bg-repo dark:bg-bg-repo-dark hover:bg-bg-main hover:dark:bg-bg-main-dark shadow-custom">
       <h3 className="m-1 w-full text-center text-accent">{repo.name}</h3>
-      <span>{repo.description}</span>
+      <span>{repo.description ? repo.description : <p>No description available</p>}</span>
       <br />
       <br />
-      {repo.stargazers_count > 0 && (
-        <a href={starsUrl}>
-          <span>⭐ {repo.stargazers_count}</span>
-        </a>
-      )}
-      {repo.language && (
-        <a href={langUrl}>
-          <span>
-            {devicons[repo.language]} {repo.language}
-          </span>
-        </a>
-      )}
+      <span className="flex justify-around items-center">
+        {repo.stargazers_count > 0 && (
+          <a href={starsUrl}>
+            <span>⭐ {repo.stargazers_count}</span>
+          </a>
+        )}
+        {repo.language && (
+          <a href={langUrl}>
+            <span>
+              {devicons[repo.language]} {repo.language}
+            </span>
+          </a>
+        )}
 
-      {repo.forks_count > 0 && (
-        <a href={forksUrl}>
-          <span>
-            {devicons["Git"]} {repo.forks_count}
-          </span>
-        </a>
-      )}
+        {repo.forks_count > 0 && (
+          <a href={forksUrl}>
+            <span>
+              {devicons["Git"]} {repo.forks_count}
+            </span>
+          </a>
+        )}
+      </span>
       {repo.homepage && repo.homepage !== "" ? (
         <>
           <br />

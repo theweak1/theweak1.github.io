@@ -24,10 +24,12 @@ const DisplayProfile = ({ profile }) => {
           <strong>Location:</strong>
           {profile.location}
         </p>
-        <p className="w-full m-0 p-0 border-b border-text dark:border-text-dark pb-5">
-          <strong>@{profile.login} </strong>
-          Repos: {profile.public_repos}
-          Gists: {profile.public_gists}
+        <p className="w-full flex justify-around items-center m-0 p-0 border-b border-text dark:border-text-dark pb-5">
+          <span>
+            <strong>@{profile.login}</strong>
+          </span>
+          <span>Repos: {profile.public_repos}</span>
+          <span>Gists: {profile.public_gists}</span>
         </p>
       </div>
     </div>
