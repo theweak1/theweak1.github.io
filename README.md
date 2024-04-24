@@ -33,9 +33,47 @@ This project is inspired by the original Personal Portfolio project. The origina
 
 Run `npm install` after clone to install all the required dependencies.
 
+## Configuration
+
+There are a comple of areas where you can modify this project so you can make it your own,
+
+- Starting by `/src/Routes/routes.jsx`, here you can change the `Title` for each individual page. And if you want, you can add your own pages by following the structure.
+
+- You can also modify the `/src/configuration/links.js`, here you can modify, add or remove the `links` for your socials, or places where people can find you.
+
+- Also you can modify the `/src/configuration/configuration.js`, this values are used for getting and displaying the github repos under your username.
+  - The number of repos is controlled by the maxPages variable, the GitHub API supports 100 repos per page max. If you have less than 100 repos, set maxPages to 1, if you have 300 then 3.
+  - Forked repos are hidden by default, to show them set `hideForks = false`
+
+## Themes
+
+Comes with a dark and light theme by default, depends upon your system configs. Edit the variables under `theme/extend/colors` in the `tailwind.config.js` to modify colorscheme.
+
+<!-- TODO: Add screen shot of light and dark mode -->
+
+
+## Programming Language Icons
+
+This project uses [Devicon](https://devicon.dev) for adding language icons, if the language name and icon are not being displated correctly for any f your repos, update `devicons` mapping in the `/src/components/Pages/projects/dispayRepos/devicons/devicons.jsx`.
+
+## Viewing projects
+
+Open `index.html` in your favorite browser or visit [theweak1.github.io/projects](https://theweak1.github.io/projects).
+
 ## How it was build
 
-Project was build using `vite`, `tailwindcss` & `javascript`. It was build using neovim as my code editor. Uses Github API for data and Devicons for programming icons.
+Project was build using `React` with `vite`, `tailwindcss` & `javascript`. It was build using neovim as my code editor. Uses Github API for data and Devicons for programming icons.
+
+## What I learned
+
+- Learned about a few quirks of the fetch API, especially implementation of `maxPages`.
+- Flex, box-shadow and some other CSS tricks were revisited.
+
+## What's next
+
+You tell me!
+
+Hit the ⭐ button if you found this useful.
 
 ## More Info
 

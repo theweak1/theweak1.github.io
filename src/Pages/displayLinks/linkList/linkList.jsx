@@ -1,5 +1,5 @@
-import IconBuilder from "../../../iconBuilder/iconBuilder";
-import urlBuilder from "../../../urlBuilder/urlBuilder";
+import IconBuilder from "../../../components/iconBuilder/iconBuilder";
+import urlBuilder from "../../../components/urlBuilder/urlBuilder";
 
 const LinkList = ({ link }) => {
   return (

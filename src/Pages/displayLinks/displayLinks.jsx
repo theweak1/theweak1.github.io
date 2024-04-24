@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
-import links from "./links";
+import links from "../../configuration/links";
 import LinkList from "./linkList/linkList";
-import SearchInput from "../../SearchInput/searchInput";
+import SearchInput from "../../components/SearchInput/searchInput";
 import { useState } from "react";
 
 const DisplayLinks = () => {

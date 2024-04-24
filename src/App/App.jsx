@@ -1,7 +1,7 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import NavBar from "../components/navBar/navBar";
-import routes from "../components/routes/routes";
+import routes from "../Routes/routes";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import RepoList from "./repoList/repoList";
-import SearchInput from "../../../SearchInput/searchInput";
-import { hideForks, maxPages } from "../../../../configuration/configuration";
+import SearchInput from "../../../components/SearchInput/searchInput";
+import { hideForks, maxPages } from "../../../configuration/configuration";
 
 const DisplayRepos = ({ username }) => {
   const [repos, setRepos] = useState([]);
