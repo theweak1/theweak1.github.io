@@ -40,11 +40,6 @@ const skillsData = [
     icon: "devicon-go-plain colored",
   },
   {
-    language: "python",
-    name: "Flask",
-    icon: "devicon-flask-original",
-  },
-  {
     language: "shell",
     name: "Linux",
     icon: "devicon-linux-plain",
