@@ -1,7 +1,6 @@
 const adjetives = [
   "a Passion Driven Developer.",
   "a Software Craftsperson.",
-  "a Tech Lead.",
   "a Learner.",
   "a Maker.",
   "an Explorer.",
