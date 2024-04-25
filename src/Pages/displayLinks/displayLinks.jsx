@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import links from "../../configuration/links";
 import LinkList from "./linkList/linkList";
 import SearchInput from "../../components/SearchInput/searchInput";
@@ -22,7 +21,7 @@ const DisplayLinks = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-full max-w-7xl">
+    <div className="flex flex-col justify-center items-center w-full">
       <h1 className="mb-1 text-accent text-4xl"> Find Me </h1>
       <small className="block w-full text-center mb-5">
         Everywhere on the internet!

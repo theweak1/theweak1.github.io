@@ -1,4 +1,5 @@
 import "@fortawesome/fontawesome-free/js/all.js";
+import { username } from "./configuration";
 
 const links = [
   {
@@ -11,7 +12,7 @@ const links = [
   {
     name: "GitHub",
     description: "My favourite place :)",
-    url: "github.com/",
+    url: `https://github.com/${username}`,
     icon: "fa-brands fa-github",
     color: "black dark:white",
   },

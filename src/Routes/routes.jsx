@@ -1,32 +1,25 @@
-import Home from '../Pages/home/Home'
+import Home from "../Pages/home/Home";
 import DisplayLinks from "../Pages/displayLinks/displayLinks";
-import About from "../Pages/about/About";
 import Projects from "../Pages/projects/projects";
 
 const routes = [
   {
-    path: "/",
+    path: "",
     element: <Home />,
     name: "Home",
-    title: "Home",
+    title: "Theweak1' Space",
   },
   {
-    path: "/about",
-    element: <About />,
-    name: "about me",
-    title: "About me",
-  },
-  {
-    path: "/projects",
+    path: "projects",
     element: <Projects />,
     name: "Projecs",
-    title: "theweak1's Projects",
+    title: "Theweak1's Projects",
   },
   {
-    path: "/links",
+    path: "links",
     element: <DisplayLinks />,
     name: "Links",
-    title: "theweak1's Links",
+    title: "Theweak1's Links",
   },
 ];
 

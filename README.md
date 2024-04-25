@@ -27,9 +27,15 @@ This is the source for my personal portfolio site of the same name.
 
 Feel free to fork it for your own use.
 
-## Iportant
+## Important
 
-This project is inspired by the original Personal Portfolio project. The original can be found [here][original_project].
+This project is inspired and modified from a couple of projects. see below the list of the original projects from where inspiration was taken
+
+- Personal Portfolio project. The original can be found [here](https://github.com/2KAbhishek/2kabhishek.github.io).
+- Project for displaying your projects. The original can be found [here](https://github.com/2KAbhishek/projects).
+- List of links project. The original can be found [here](https://github.com/2KAbhishek/links).
+
+All of this projects are from the user [2KAbhishek](https://github.com/2KAbhishek)
 
 Run `npm install` after clone to install all the required dependencies.
 
@@ -41,6 +47,14 @@ There are a comple of areas where you can modify this project so you can make it
 
 - You can also modify the `/src/configuration/links.js`, here you can modify, add or remove the `links` for your socials, or places where people can find you.
 
+- You can modify the `Skills` by changing the `/src/configuration/skils.js`, here you can add or remove skill.
+
+- You may also modify the `adjetives` that are displayed with the typewriter effect. to do this change the `/src/configuration/adjetive.js`.
+
+  - If you wish to change the timing for the `typewriting` effect, you can do so by modifying the constructor `useTypewriter` withing the `/src/Pages/home/Home.jsx` file.
+
+---
+
 - Also you can modify the `/src/configuration/configuration.js`, this values are used for getting and displaying the github repos under your username.
   - The number of repos is controlled by the maxPages variable, the GitHub API supports 100 repos per page max. If you have less than 100 repos, set maxPages to 1, if you have 300 then 3.
   - Forked repos are hidden by default, to show them set `hideForks = false`
@@ -49,8 +63,9 @@ There are a comple of areas where you can modify this project so you can make it
 
 Comes with a dark and light theme by default, depends upon your system configs. Edit the variables under `theme/extend/colors` in the `tailwind.config.js` to modify colorscheme.
 
-<!-- TODO: Add screen shot of light and dark mode -->
+![dark Mode Theme](./assets/Dark_mode.png)
 
+![light mode Theme](./assets/Light_mode.png)
 
 ## Programming Language Icons
 

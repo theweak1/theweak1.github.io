@@ -1,5 +1,3 @@
-import React from "react";
-
 const devicons = {
   Git: <i className="devicon-git-plain" style={{ color: "#555" }}></i>,
   Github: <i className="devicon-github-plain" style={{ color: "#1688f0" }}></i>,
