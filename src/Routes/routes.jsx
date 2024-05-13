@@ -4,19 +4,19 @@ import Projects from "../Pages/projects/projects";
 
 const routes = [
   {
-    path: "",
+    path: "/",
     element: <Home />,
     name: "Home",
     title: "Theweak1' Space",
   },
   {
-    path: "projects",
+    path: "/projects",
     element: <Projects />,
     name: "Projecs",
     title: "Theweak1's Projects",
   },
   {
-    path: "links",
+    path: "/links",
     element: <DisplayLinks />,
     name: "Links",
     title: "Theweak1's Links",
