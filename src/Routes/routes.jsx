@@ -7,12 +7,12 @@ const routes = [
     path: "/",
     element: <Home />,
     name: "Home",
-    title: "Theweak1' Space",
+    title: "Theweak1's Space",
   },
   {
     path: "/projects",
     element: <Projects />,
-    name: "Projecs",
+    name: "Projects",
     title: "Theweak1's Projects",
   },
   {
@@ -24,3 +24,4 @@ const routes = [
 ];
 
 export default routes;
+

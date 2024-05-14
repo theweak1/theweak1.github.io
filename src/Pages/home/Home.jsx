@@ -66,7 +66,7 @@ const Home = () => {
         <h2 className="text-text dark:text-text-dark">About Me</h2>
         <p className="p-2 text-center my-0 mx-auto">
           Hey traveller, welcome to my little space on the internet. <br />
-          You can find my
+          You can find my{" "}
           <Link
             to="/blog"
             className="text-accent text-bold hover:text-accent hover:bg-alt hover:dark:bg-alt-dark hover:border border-accent rounded-s"
@@ -78,7 +78,7 @@ const Home = () => {
             to="/projects"
             className="text-accent text-bold hover:text-accent hover:bg-alt hover:dark:bg-alt-dark hover:border border-accent rounded-s"
           >
-            projects
+            projects{" "}
           </Link>
           and{" "}
           <Link
@@ -89,7 +89,7 @@ const Home = () => {
           </Link>{" "}
           here.
           <br />
-          Feel free to
+          Feel free to{" "}
           <a
             href={links[0].url}
             target="_blank"

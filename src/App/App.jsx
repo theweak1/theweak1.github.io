@@ -49,7 +49,7 @@ function AppInner() {
       </main>
       <footer className="text-center bg-bg-main dark:bg-bg-main-dark text-text dark:text-text-dark text-lg">
         <h4>
-          Made with ❤ by
+          Made with ❤ by{" "}
           <a
             href="https://github.com/theweak1/projects"
             className="text-accent"
