@@ -67,12 +67,14 @@ const Home = () => {
         <p className="p-2 text-center my-0 mx-auto">
           Hey traveller, welcome to my little space on the internet. <br />
           You can find my{" "}
-          <Link
-            to="https://theweak1.github.io/theweak1blog/"
+          <a
+            href="https://theweak1.github.io/theweak1blog/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-accent text-bold hover:text-accent hover:bg-alt hover:dark:bg-alt-dark hover:border border-accent rounded-s"
           >
             blog
-          </Link>
+          </a>
           ,{" "}
           <Link
             to="/projects"

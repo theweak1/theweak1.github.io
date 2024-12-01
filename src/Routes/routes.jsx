@@ -28,6 +28,7 @@ const routes = [
     path: "https://theweak1.github.io/theweak1blog/",
     name: "BlogList",
     hide: false,
+    external: true
   },
 ];
 
