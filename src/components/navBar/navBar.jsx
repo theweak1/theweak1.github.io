@@ -3,9 +3,11 @@ import routes from "../../Routes/routes";
 
 const NavBar = ({ currentPath }) => {
   return (
-    <div className="sticky top-0 bg-bg-main dark:bg-bg-main-dark dark:text-text-dark">
-      <nav className="flex justify-around items-center">
-        {routes.map((route) => (
+    <nav className="sticky top-0 bg-bg-main dark:bg-bg-main-dark dark:text-text-dark flex justify-around items-center ">
+      {routes.map((route) =>
+        route.hide ? (
+          ""
+        ) : (
           <Link
             key={route.path}
             to={route.path}
@@ -13,9 +15,9 @@ const NavBar = ({ currentPath }) => {
           >
             {route.name}
           </Link>
-        ))}
-      </nav>
-    </div>
+        ),
+      )}
+    </nav>
   );
 };
 

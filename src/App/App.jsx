@@ -29,7 +29,7 @@ function AppInner() {
   return (
     <div className="md:max-w-5xl lg:max-w-full overflow-hidden">
       <NavBar currentPath={currentPath} />
-      <main className="bg-bg-main dark:bg-bg-main-dark text-text dark:text-text-dark min-h-screen flex items-center justify-center box-border ">
+      <main className="bg-bg-main dark:bg-bg-main-dark text-text dark:text-text-dark min-h-screen flex  justify-center box-border ">
         <Routes>
           {routes.map(({ path, element, title }) => (
             <Route

@@ -68,7 +68,7 @@ const Home = () => {
           Hey traveller, welcome to my little space on the internet. <br />
           You can find my{" "}
           <Link
-            to="/blog"
+            to="https://theweak1.github.io/theweak1blog/"
             className="text-accent text-bold hover:text-accent hover:bg-alt hover:dark:bg-alt-dark hover:border border-accent rounded-s"
           >
             blog
